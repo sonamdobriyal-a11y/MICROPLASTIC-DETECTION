@@ -1,0 +1,22 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Ultralytics outputs
+runs/
+
+# Derived datasets
+dataset/
+
+# Logs and checkpoints
+*.log
+*.pt
