@@ -17,7 +17,9 @@ def parse_args() -> argparse.Namespace:
         help="Path to the dataset YAML describing train/val splits.",
     )
     parser.add_argument(
-        
+         "--model",
+        type=Path,
+        required=True,
         
         help="Base model checkpoint to fine-tune (e.g. yolov8n.pt, yolov8s.pt).",
     )
@@ -41,6 +43,7 @@ def parse_args() -> argparse.Namespace:
         default=Path("runs"),
         help="Directory where Ultralytics stores training artifacts.",
     )
+    
     parser.add_argument(
         "--name",
         type=str,
